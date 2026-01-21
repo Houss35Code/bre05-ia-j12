@@ -1,0 +1,59 @@
+"Agis comme un mentor en développement web. Recherche et liste 5 ressources pédagogiques de qualité en français, 
+publiées ou mises à jour après 2021, qui expliquent l'implémentation de la Programmation Orientée Objet (POO) en JavaScript Vanilla (notamment les classes, 
+l'héritage et l'encapsulation).
+Présente les résultats dans un tableau Markdown avec les colonnes suivantes :
+
+Nom de la ressource
+Type de support (ex: Article, Vidéo, Cours complet)
+Points clés abordés (ex: Classes ES6, Prototypes, Private fields)
+Lien URL"
+Ajoutes la date des articles en question.
+
+Voici le prompt mis à jour pour inclure la dimension temporelle, ainsi que le résultat correspondant.
+
+### Le Prompt optimisé
+
+> "Agis comme un mentor en développement web. Recherche et liste **5 ressources pédagogiques de qualité en français**, publiées ou mises à jour **après 2021**, qui expliquent l'implémentation de la **Programmation Orientée Objet (POO) en JavaScript Vanilla** (notamment les classes, l'héritage et l'encapsulation).
+> Présente les résultats dans un **tableau Markdown** avec les colonnes suivantes :
+> 1. **Nom de la ressource**
+> 2. **Type de support**
+> 3. **Date de publication/mise à jour**
+> 4. **Points clés abordés**
+> 5. **Lien URL**"
+> 
+> 
+
+---
+
+### Résultats (Janvier 2026)
+
+En tant que mentor, j'ai sélectionné ces ressources pour leur clarté et leur modernité, notamment concernant l'usage des propriétés privées (#), une nouveauté majeure de ces dernières années.
+
+| Nom de la ressource | Type de support | Date | Points clés abordés | Lien URL |
+| --- | --- | --- | --- | --- |
+| **MDN Web Docs (FR)** | Documentation / Cours | Déc. 2025 | Prototypes, Classes, Héritage | [Consulter](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Objects/Object-oriented_programming) |
+| **Grafikart - POO JS** | Vidéo / Tutoriel | Mai 2023 | Classes ES6, Instances, `this` | [Regarder](https://www.google.com/search?q=https://grafikart.fr/tutoriels/javascript-objet-2061) |
+| **Pierre Giraud** | Cours complet | Oct. 2023 | Constructeurs, Prototypes, Classes | [Lire](https://www.google.com/search?q=https://www.pierre-giraud.com/javascript-apprendre-coder-cours/objet-oriente-programmation/) |
+| **Docstring** | Article technique | Oct. 2022 | Encapsulation, Méthodes statiques | [Lire](https://www.google.com/search?q=https://www.docstring.fr/blog/la-programmation-orientee-objet-en-javascript/) |
+| **FreeCodeCamp (FR)** | Certification (Beta) | Janv. 2024 | Algorithmie objet, Getters/Setters | [Pratiquer](https://www.google.com/search?q=https://www.freecodecamp.org/french/learn/javascript-algorithms-and-data-structures-v8/) |
+
+---
+
+### Comprendre la structure d'une classe en JS
+
+Pour bien débuter, il est essentiel de visualiser comment une classe organise les données (attributs) et les comportements (méthodes). Voici un schéma conceptuel de l'encapsulation et de l'héritage :
+
+### Petit conseil de mentor :
+
+Priorisez les ressources qui mentionnent les **champs privés** (utilisant le symbole `#`). C'est le standard actuel pour l'encapsulation en JavaScript Vanilla. Par exemple :
+
+```javascript
+class CompteBancaire {
+  #solde = 0; // Propriété privée
+
+  deposer(montant) {
+    this.#solde += montant;
+  }
+}
+
+```

@@ -1,0 +1,20 @@
+Exercice 2.
+Rédigez un prompt qui vous permet d'obtenir sous forme de tableau Markdown les 5 auteurs / autrices les plus vendus en France en 2014 classés du plus vendu au moins vendu.
+
+Un prompt qui donne le résultat attendu (sur Gemini) :
+
+Peux-tu me donner un tableau au format Markdown qui indique les 5 auteurs ayant vendu le plus de livres en Frnce en 2014 ?
+
+Classe-les du plus haut score de vente au plus bas.
+Classement attendu :
+
+Guillaume Musso (~1.6M)
+
+Marc Levy (~1.5M)
+
+E.L James (~1.35M)
+
+Fred Vargas (~950K)
+
+J.K Rowling (~800K)
+

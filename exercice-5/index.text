@@ -1,0 +1,24 @@
+Analyse le code suivant composé de deux fichiers (traitement.php et fetch.js) et identifie le problème de sécurité majeur. 
+Propose une solution complète et sécurisée pour corriger ce problème en suivant les bonnes pratiques de développement web.
+
+traitement.php :
+<?php
+$user_input = $_GET['user_id']; 
+$query = "SELECT * FROM users WHERE id = $user_input"; 
+$result = mysqli_query($conn, $query); 
+echo "Utilisateur trouvé : " . $user_input;
+?>
+
+fetch.js :
+function fetchData(id) {
+    const url = 'traitement.php?user_id=' + id;
+    fetch(url)
+      .then(response => response.json())
+      .then(data => console.log(data));
+}
+
+Explique :
+1. Quel est le problème de sécurité majeur ?
+2. Quels sont les risques concrets ?
+3. Comment corriger ce problème avec du code sécurisé ?
+4. Quelles autres bonnes pratiques devraient être appliquées ?

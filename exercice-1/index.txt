@@ -1,0 +1,32 @@
+Exercice 1.
+Rédigez un prompt qui permet d'obtenir un tableau au format Markdown qui classe les présidents de la 5ème république 
+en fonction de leur résultat au second tour de l'élection présidentielle, du plus haut au plus bas (en % de suffrages exprimés).
+
+Un prompt qui donne le résultat attendu (sur Gemini) :
+
+Peux-tu me donner un tableau au format Markdown qui classe les présidents de la 5ème république 
+française en fonction de leur résultat (en % de suffrages exprimés)
+au second tour de l'élection présidentielle.
+
+
+
+Classe-les du plus haut score au plus bas.
+Exercice 1.
+Classement attendu :
+
+Jacques Chirac - 2002 - 82.21%
+
+Emmanuel Macron - 2017 - 66.10%
+
+Georges Pompidou - 1969 - 58.21%
+
+Charles de Gaulle - 1965 - 55.20%
+
+François Mitterrand - 1988 - 54.02%
+
+Nicolas Sarkozy - 2007 - 53.06%
+
+François Hollande - 2012 - 51.64%
+
+Valéry Giscard d'Estaing - 1974 - 50.81%
+

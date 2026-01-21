@@ -1,0 +1,53 @@
+Corrige le code HTML suivant en améliorant son accessibilité selon les standards WCAG (Web Content Accessibility Guidelines). 
+Ajoute les éléments manquants pour rendre le formulaire accessible aux personnes utilisant des lecteurs d'écran et des technologies d'assistance. Voici le code à corriger :
+
+<div>
+    <h2>Formulaire d'inscription</h2>
+    <input type="text" id="nom" placeholder="Votre nom">
+    <input type="email" id="email" placeholder="Votre email">
+    <button onclick="submitForm()">Envoyer</button>
+</div>
+
+Points à améliorer :
+- Utiliser les balises sémantiques appropriées
+- Ajouter des labels pour les champs de formulaire
+- Améliorer la structure pour l'accessibilité
+- S'assurer que le formulaire soit navigable au clavier
+- Ajouter les attributs ARIA si nécessaire
+
+
+<form id="inscription-form" onsubmit="event.preventDefault(); submitForm();">
+    <fieldset>
+        <legend>Formulaire d'inscription</legend>
+        
+        <div>
+            <label for="nom">Nom :</label>
+            <input 
+                type="text" 
+                id="nom" 
+                name="nom"
+                placeholder="Votre nom"
+                required
+                aria-required="true"
+                aria-describedby="nom-aide"
+            >
+            <span id="nom-aide" class="sr-only">Entrez votre nom complet</span>
+        </div>
+        
+        <div>
+            <label for="email">Email :</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email"
+                placeholder="votre.email@exemple.com"
+                required
+                aria-required="true"
+                aria-describedby="email-aide"
+            >
+            <span id="email-aide" class="sr-only">Entrez une adresse email valide</span>
+        </div>
+        
+        <button type="submit">Envoyer</button>
+    </fieldset>
+</form>
